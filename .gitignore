@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Testing
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Local package inventory
+installed_packages.txt
+
+# Experimental model artifacts
+artifacts/*.joblib
+
+# Keep the selected production model
+!artifacts/random_forest_tuned.joblib

@@ -39,7 +39,8 @@ def load_data():
         df["TotalCharges"],
         errors="coerce"
     )
-
+    #Zero-Tenure customers have no accumulated charges
+    df["TotalCharges"] = df["TotalCharges"].fillna(0)
     # Convert target into binary values
     df["Churn"] = df["Churn"].map({
         "No": 0,

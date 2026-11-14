@@ -26,17 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 ARTIFACT_DIR = BASE_DIR / "artifacts"
 
 MODEL_PATHS = {
-    "Tuned Logistic Regression":
-        ARTIFACT_DIR / "logistic_tuned.joblib",
-
-    "Balanced Logistic Regression":
-        ARTIFACT_DIR / "churn_pipeline_balanced.joblib",
-
     "Tuned Random Forest":
-        ARTIFACT_DIR / "random_forest_tuned.joblib",
-
-    "Tuned Gradient Boosting":
-        ARTIFACT_DIR / "gradient_boosting_tuned.joblib"
+        ARTIFACT_DIR / "random_forest_tuned.joblib"
 }
 
 
